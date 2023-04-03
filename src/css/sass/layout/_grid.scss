@@ -1,0 +1,23 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+
+@media (max-width:$small-screens) {
+  .container {
+    width: 100%;
+  }
+}
+/* Medium */
+@media (min-width: $medium-screens) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: $large-screens) {
+  .container {
+    width: 1170px;
+  }
+}

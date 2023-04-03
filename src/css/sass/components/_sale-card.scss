@@ -1,0 +1,39 @@
+.sale-card {
+  position: relative;
+  min-height: 400px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  &:before {
+    @include black-overlay;
+  }
+  .content {
+    position: relative;
+    padding: 40px;
+    color: white;
+    h1 {
+      font-size: $x-large;
+      font-weight: normal;
+      background: linear-gradient(
+        90deg,
+        rgba(114, 252, 69, 1) 0%,
+        rgba(253, 136, 29, 1) 26%,
+        rgba(254, 104, 20, 1) 40%,
+        rgba(255, 0, 0, 1) 56%
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 20px 0px 0px;
+    }
+    p {
+      margin-top: 10px;
+      max-width: 350px;
+    }
+  }
+  button {
+    @include small-button($secondary-color, white);
+  }
+}

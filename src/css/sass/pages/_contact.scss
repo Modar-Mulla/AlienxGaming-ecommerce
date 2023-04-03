@@ -1,0 +1,192 @@
+.contact-page {
+
+  background-color: $secondary-background;
+  > .page-banner {
+    .container {
+      h1 {
+        font-size: $x-large * 2.5;
+        font-weight: 400;
+        color: $primary-color;
+      }
+    }
+  }
+  .contact-form {
+    background-color: white;
+    max-width: 620px;
+    margin: auto;
+    form {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 40px 15px;
+      padding: 60px;
+      box-shadow: 0 2px 12px 0 rgba(37, 39, 41, 0.08);
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      flex-basis: calc(50% - 15px);
+    }
+    label {
+      margin-bottom: 10px;
+      font-size: $small;
+      font-weight: 500;
+    }
+    input:not(input[type="submit"]) {
+      padding: 18px;
+      box-shadow: 0 2px 6px 0 rgba(37, 39, 41, 0.04);
+      border: none;
+      outline: 1px solid #e2e6eb;
+      border-radius: 30px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      -ms-border-radius: 30px;
+      -o-border-radius: 30px;
+      transition: 0.3s;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
+      &:hover {
+        outline-color: #20283f;
+        box-shadow: 0 4px 8px 0 rgba(37, 39, 41, 0.08);
+      }
+      &:focus {
+        outline-color: #20283f;
+        box-shadow: 0 4px 8px 0 rgba(37, 39, 41, 0.08);
+      }
+    }
+    .message {
+      flex-basis: 100%;
+    }
+    textarea {
+      max-width: 500px;
+      min-width: 100%;
+      max-height: 200px;
+      min-height: 130px;
+      padding: 18px;
+      box-shadow: 0 2px 6px 0 rgba(37, 39, 41, 0.04);
+      border: none;
+      outline: 1px solid #e2e6eb;
+      transition: outline 0.3s, box-shadow 0.3s;
+      -webkit-transition: outline 0.3s, box-shadow 0.3s;
+      -moz-transition: outline 0.3s, box-shadow 0.3s;
+      -ms-transition: outline 0.3s, box-shadow 0.3s;
+      -o-transition: outline 0.3s, box-shadow 0.3s;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      &:hover {
+        outline-color: #20283f;
+        box-shadow: 0 4px 8px 0 rgba(37, 39, 41, 0.08);
+      }
+      &:focus {
+        outline-color: #20283f;
+        box-shadow: 0 4px 8px 0 rgba(37, 39, 41, 0.08);
+      }
+    }
+    .submit {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-basis: 100%;
+    }
+    input[type="submit"] {
+      @include small-button($secondary-color, white);
+    }
+    .social-links {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 10px;
+      flex-basis: 50%;
+    }
+    a {
+      @include flex-center-item;
+      color: $dark-grey;
+      background-color: $secondary-background;
+      padding: 10px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      transition: 0.3s;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
+      &:hover {
+        color: white;
+        background-color: $secondary-color;
+      }
+    }
+  }
+  .reach-directly {
+    padding-bottom: $section-padding * 2;
+    .page-banner {
+      padding-bottom: 0;
+    }
+    h1 {
+      font-size: $large;
+    }
+    .contact-info-wrapper {
+      display: flex;
+      justify-content: space-between;
+      max-width: 700px;
+      margin: auto;
+      padding: 30px 20px;
+      background-color: white;
+      box-shadow: 0 2px 6px 0 rgba(37, 39, 41, 0.04);
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-basis: 50%;
+        padding: 10px 0;
+        a {
+          text-decoration: none;
+
+          &:hover p {
+            color: $secondary-color;
+          }
+        }
+        svg {
+          color: $secondary-color;
+          font-size: $x-large * 1.5;
+          margin-right: 20px;
+        }
+        p {
+          margin: 0;
+          transition: 0.3s;
+          -webkit-transition: 0.3s;
+          -moz-transition: 0.3s;
+          -ms-transition: 0.3s;
+          -o-transition: 0.3s;
+        }
+        p:first-child {
+          color: $primary-color;
+          margin-bottom: 10px;
+        }
+        p:last-child {
+          color: $dark-grey;
+        }
+      }
+      div:first-child {
+        border-right: 1px solid black;
+      }
+    }
+  }
+}

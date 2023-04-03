@@ -1,0 +1,283 @@
+footer {
+  background-color: $primary-color;
+
+  .additional-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: $section-padding * 2 0;
+    @media (max-width: $medium-screens) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+    }
+    @media (max-width: $small-screens) {
+      grid-template-columns: 100%;
+      gap: 40px;
+    }
+  }
+  .links {
+    a {
+      display: block;
+      width: fit-content;
+      padding: 20px 0;
+      transition: 0.3s;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+  h3 {
+    color: white;
+    margin: 0;
+    margin-bottom: 30px;
+    @media (max-width: $x-small-screens) {
+      font-size: $small;
+    }
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    @media (max-width: $x-small-screens) {
+      font-size: $x-small;
+    }
+  }
+  .products-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @media (max-width: $medium-screens) {
+      gap: 30px;
+    }
+    @media (max-width: $small-screens) {
+      gap: 30px;
+    }
+  }
+  .product {
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    h4 {
+      color: white;
+      margin: 0;
+      margin-bottom: 10px;
+      transition: 0.3s;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
+      @media (max-width: $x-small-screens) {
+        font-size: $x-small;
+      }
+    }
+    &:hover h4 {
+      color: $secondary-color;
+    }
+    &:hover img {
+      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+    }
+
+    @media (max-width: $medium-screens) {
+      flex-direction: column;
+    }
+  }
+  .img-wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 60px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+    @media (max-width: $small-screens) {
+      justify-content: center;
+    }
+  }
+  img {
+    width: 100%;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (max-width: $medium-screens) {
+      margin-block-start: -10px;
+    }
+  }
+  .price {
+    @media (max-width: $x-small-screens) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .with-sale {
+    color: white;
+    font-size: $small;
+    font-weight: normal;
+    margin-right: 10px;
+    @media (max-width: $x-small-screens) {
+      font-size: $x-small;
+    }
+  }
+  .without-sale {
+    color: $light-grey;
+    font-size: $small;
+    text-decoration: line-through;
+    @media (max-width: $x-small-screens) {
+      font-size: $x-small;
+    }
+  }
+  .subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsla(0, 0%, 100%, 0.1);
+    padding: 40px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    @media (max-width: $medium-screens) {
+      grid-column: span 2;
+    }
+    @media (max-width: $small-screens) {
+      grid-column: 1;
+    }
+    h3 {
+      margin: 0;
+      margin-bottom: 20px;
+      color: white;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 280px;
+      width: 100%;
+    }
+    input {
+      width: 100%;
+      border: none;
+      outline: none;
+      padding: 18px 20px;
+      border-radius: 30px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      -ms-border-radius: 30px;
+      -o-border-radius: 30px;
+    }
+    input[type="button"] {
+      background-color: $secondary-color;
+      color: white;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
+      &:hover {
+        background-color: $secondary-button-hover;
+        transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -o-transform: translateY(-10px);
+      }
+    }
+  }
+}
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $section-padding 0;
+  border-top: 1px solid $light-grey;
+  @media (max-width: $small-screens) {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    @media (max-width: $small-screens) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      padding-right: 30px;
+      color: white;
+      text-decoration: none;
+      font-size: $large;
+      font-weight: 300;
+      border-right: 1px solid $light-grey;
+      transition: 0.3s;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
+      @media (max-width: $small-screens) {
+        border-right: none;
+        padding: 0;
+      }
+      @media (max-width: $x-small-screens) {
+        border-right: none;
+        padding: 0;
+        font-size: $medium;
+        svg {
+          font-size: 20px;
+        }
+      }
+    }
+    a:hover {
+      opacity: 0.8;
+    }
+    svg {
+      color: $secondary-color;
+      font-size: 40px;
+    }
+    p {
+      font-size: $x-small;
+      color: white;
+      text-align: center;
+      padding-left: 30px;
+      @media (max-width: $small-screens) {
+        padding: 0 30px;
+      }
+      @media (max-width: $x-small-screens) {
+        padding: 0;
+      }
+    }
+  }
+  .payment-methods {
+    display: flex;
+    img {
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+    }
+    img:nth-child(2) {
+      margin: 0 10px;
+    }
+  }
+}

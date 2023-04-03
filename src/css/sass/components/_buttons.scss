@@ -1,0 +1,106 @@
+@mixin circle-button($radius) {
+  @include flex-center-item;
+  width: $radius;
+  height: $radius;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: $secondary-color;
+  color: white;
+  cursor: pointer;
+}
+@mixin small-button($bg-color, $color) {
+  @include flex-center-item;
+  min-width: 100px;
+  background-color: $bg-color;
+  color: $color;
+  padding: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  font-size: $small;
+  font-weight: bold;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  &:hover {
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    opacity: 0.8;
+  }
+}
+@mixin medium-button($bg-color, $color) {
+  @include flex-center-item;
+  min-width: 150px;
+  background-color: $bg-color;
+  color: $color;
+  padding: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  font-size: $small;
+  font-weight: bold;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  &:hover {
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    opacity: 0.8;
+  }
+}
+@mixin large-button($bg-color, $color) {
+  @include flex-center-item;
+  min-width: 250px;
+  min-height: 50px;
+  background-color: $bg-color;
+  color: $color;
+  padding: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  font-size: $small;
+  font-weight: bold;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  &:hover {
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    opacity: 0.8;
+  }
+}

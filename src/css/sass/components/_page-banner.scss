@@ -1,0 +1,44 @@
+.page-banner {
+  padding: $section-padding 0;
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: "l-img body r-img";
+    justify-items: center;
+    min-height: 280px;
+    background-size: cover;
+    background-position: center;
+    background-color: $secondary-background;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+    @media (max-width: $x-small-screens) {
+      grid-template-columns: 100%;
+      grid-template-areas: "body";
+    }
+  }
+  .back {
+    background-image: url("../../../assets/razer-viper-v2-pro-cat-banner.jpg");
+  }
+  .content {
+    @include flex-center-item;
+    flex-direction: column;
+    grid-area: body;
+  }
+  h1 {
+    font-size: $x-large * 1.5;
+    font-weight: 500;
+    margin: 0;
+  }
+  p {
+    max-width: 500px;
+    color: $dark-grey;
+    margin: 0;
+    margin-top: 20px;
+    line-height: 2;
+  }
+}
